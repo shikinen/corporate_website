@@ -1,0 +1,34 @@
+{
+  "name": "bursztyn",
+  "version": "1.0.0",
+  "description": "modern-looking booking app",
+  "main": "index.js",
+  "scripts": {
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/main.css -o css/main.prefix.css",
+    "compress:css": "node-sass css/main.prefix.css css/main.min.css --output-style compressed",
+    "build:css": "npm-run-all prefix:css compress:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shikinen/bursztyn_booking_app"
+  },
+  "author": "Rafal Miodowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shikinen/bursztyn_booking_app/issues"
+  },
+  "homepage": "https://github.com/shikinen/bursztyn_booking_app#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "node-sass": "^4.9.0",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^4.1.1"
+  },
+  "dependencies": {
+    "svg4everybody": "^2.1.9"
+  }
+}
