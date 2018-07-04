@@ -1,4 +1,10 @@
 .board {
     background-color: $color-secondary;
     grid-column: col-start 7 / full-end;
+
+    color: #fff;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
