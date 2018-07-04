@@ -1,7 +1,7 @@
 {
-  "name": "bursztyn",
+  "name": "habituo",
   "version": "1.0.0",
-  "description": "modern-looking booking app",
+  "description": "corporate website of habituo",
   "main": "index.js",
   "scripts": {
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/main.css -o css/main.prefix.css",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shikinen/bursztyn_booking_app"
+    "url": "git+https://github.com/shikinen/corporate_website"
   },
   "author": "Rafal Miodowski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shikinen/bursztyn_booking_app/issues"
+    "url": "https://github.com/shikinen/corporate_website/issues"
   },
-  "homepage": "https://github.com/shikinen/bursztyn_booking_app#readme",
+  "homepage": "https://github.com/shikinen/corporate_website#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
