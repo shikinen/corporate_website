@@ -1,0 +1,4 @@
+.header {
+    background-color: lighten($color-secondary, 20%);
+    grid-column: sidebar-end / col-end 6;
+}
