@@ -1,2 +1,2 @@
 # corporate_website
-Redesign concept of a corporate website – laid out using CSS Grid
+Design concept of a corporate website – laid out using CSS Grid
