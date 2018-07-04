@@ -5,6 +5,8 @@ $color-secondary: #101d2c;
 $color-grey-light-1: #f9f7f6;
 $color-grey-light-2: #aaa;
 
+$color-text: #101d2c;
+
 $color-grey-dark-1: rgb(77, 77, 77);
 $color-grey-dark-2: rgb(110, 110, 110);
 
@@ -27,7 +29,7 @@ html {
 body {
     font-family: $font-primary;
     //color: $color-grey-dark-1;
-    color: #aaa;
+    color: $color-text;
     font-weight: 300;
 }
 
