@@ -1,6 +1,6 @@
 .header {
     background-color: lighten($color-secondary, 20%);
-    grid-column: sidebar-end / col-end 6;
+    grid-column: full-start / col-end 6;
 
     color: #fff;
     font-size: 1.5rem;
@@ -14,11 +14,18 @@
     padding-top: 4rem;
 
     display: grid;
-    grid-template-rows: 1fr min-content 6rem 1fr;
-    grid-template-columns: max-content;
+    grid-template-rows: 1fr min-content minmax(6rem, max-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content);
     justify-content: center;
-
     grid-row-gap: 1.5rem;
+
+    @media only screen and (max-width: $breakpoint-medium) {
+        grid-column: full;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+        padding: 5rem;
+    }
 
     &__logo {
         height: 5rem;
@@ -53,9 +60,12 @@
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 3rem;
         justify-items: center;
+        align-items: center;
+
         opacity: .7;
         img {
-            height: 2.5rem;
+            max-height: 2.5rem;
+            max-width: 100%;
         }
     }
 }

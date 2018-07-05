@@ -11,13 +11,26 @@
     justify-items: center;
     grid-row-gap: 2rem;
 
+    @media only screen and (max-width: $breakpoint-medium) {
+        grid-column: full;
+    }
+
+    @media only screen and (max-width: $breakpoint-small) {
+        display: none;
+    }
+
     &__list {
         display: grid;
         grid-template-columns: min-content max-content;
         grid-column-gap: 2rem;
         grid-row-gap: 5vh;
-
         align-items: center;
+
+        @media only screen and (max-width: $breakpoint-medium) {
+            grid-template-columns: repeat(3, min-content minmax(max-content, 15rem));
+        }
+
+
     }
 
     &__img {

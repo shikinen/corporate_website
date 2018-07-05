@@ -2,23 +2,29 @@
     background-color: $color-primary;
     grid-column: sidebar;
     grid-row: 1 / -1;
-    padding: 0;
-    flex: box;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (max-width: $breakpoint-large) {
+        grid-column: full;
+        grid-row: 1 / 2;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
 }
 
 .menu-button {
-    border: 0;
+    border: none;
     border-radius: 0;
-
     display: block;
     background-color: #fff;
     width: 4.5rem;
     height: 2px;
     cursor: pointer;
 
-    margin: auto;
-    margin-top: 4rem;
-    
+    margin-top: 4rem;    
 
     &::before {
         content: '';
@@ -39,4 +45,11 @@
 
     &::before { transform: translateY(-1.5rem); }
     &::after { transform: translateY(1.4rem); }
+
+    @media only screen and (max-width: $breakpoint-large) {
+        margin-top: 0;
+        margin-right: 3rem;
+        &::before { transform: translateY(-1.2rem); }
+        &::after { transform: translateY(1rem); }
+    }
 }
