@@ -29,8 +29,6 @@
         @media only screen and (max-width: $breakpoint-medium) {
             grid-template-columns: repeat(3, min-content minmax(max-content, 15rem));
         }
-
-
     }
 
     &__img {
