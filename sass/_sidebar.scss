@@ -3,4 +3,40 @@
     grid-column: sidebar;
     grid-row: 1 / -1;
     padding: 0;
+    flex: box;
+}
+
+.menu-button {
+    border: 0;
+    border-radius: 0;
+
+    display: block;
+    background-color: #fff;
+    width: 4.5rem;
+    height: 2px;
+    cursor: pointer;
+
+    margin: auto;
+    margin-top: 4rem;
+    
+
+    &::before {
+        content: '';
+        display: block;
+        background-color: #fff;
+        width: 4.5rem;
+        height: 2px;
+        display: block;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        background-color: #fff;
+        width: 4.5rem;
+        height: 2px;
+    }
+
+    &::before { transform: translateY(-1.5rem); }
+    &::after { transform: translateY(1.4rem); }
 }
